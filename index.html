@@ -1,107 +1,103 @@
-<section id="servicii-contact" style="padding: 20px; max-width: 700px; font-family: Arial, sans-serif;">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+    }
 
-  <div>
-    <button onclick="showLang('ro')">Română</button>
-    <button onclick="showLang('en')">English</button>
-    <button onclick="showLang('gr')">Ελληνικά</button>
-    <button onclick="showLang('ru')">Русский</button>
-    <button onclick="showLang('he')">עברית</button>
-  </div>
+    #servicii-contact {
+      background-color: #fff;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
 
-  <!-- ROMÂNĂ -->
-  <div id="content-ro" class="lang-content" style="margin-top:20px;">
-    <h2>Bine ați venit pe site-ul nostru!</h2>
-    <h3>Cu ce ne ocupăm</h3>
-    <p>Suntem specializați în lucrări de înaltă calitate în domeniul construcțiilor și amenajărilor interioare. Echipa noastră profesionistă vă oferă servicii complete și personalizate pentru:</p>
-    <ul>
-      <li>Montaj rigips – structuri rezistente și finisaje perfecte, adaptate nevoilor dumneavoastră</li>
-      <li>Aplicare glet – suprafețe netede și pregătite pentru orice tip de vopsea sau decor</li>
-      <li>Vopsitorie – folosim materiale premium pentru un finisaj durabil și estetic</li>
-      <li>Montaj gresie și faianță – pentru un aspect elegant și funcțional în băi, bucătării și alte spații</li>
-      <li>Tencuieli – atât tencuieli decorative, cât și funcționale, realizate cu atenție la detalii</li>
-    </ul>
-    <p>Ne angajăm să oferim lucrări de calitate, respectând termenele și bugetul stabilit, pentru ca fiecare proiect să devină o realitate de succes.</p>
-    <h3>Contact</h3>
-    <p>Telefon: <a href="tel:+96226088" style="color: blue; text-decoration: underline;">96226088</a></p>
-  </div>
+    #servicii-contact h2, #servicii-contact h3 {
+      color: #2c3e50;
+    }
 
-  <!-- ENGLISH -->
-  <div id="content-en" class="lang-content" style="display:none; margin-top:20px;">
-    <h2>Welcome to our website!</h2>
-    <h3>Our Services</h3>
-    <p>We specialize in high-quality construction and interior finishing works. Our professional team offers complete and personalized services for:</p>
-    <ul>
-      <li>Drywall installation – sturdy structures and perfect finishes tailored to your needs</li>
-      <li>Putty application – smooth surfaces ready for any type of paint or decor</li>
-      <li>Painting – we use premium materials for durable and aesthetic finishes</li>
-      <li>Tile and ceramic installation – for an elegant and functional look in bathrooms, kitchens, and other spaces</li>
-      <li>Plastering – both decorative and functional plastering done with attention to detail</li>
-    </ul>
-    <p>We are committed to delivering quality work, respecting deadlines and budgets, to make every project a successful reality.</p>
-    <h3>Contact</h3>
-    <p>Phone: <a href="tel:+96226088" style="color: blue; text-decoration: underline;">96226088</a></p>
-  </div>
+    .lang-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
 
-  <!-- ΕΛΛΗΝΙΚΑ -->
-  <div id="content-gr" class="lang-content" style="display:none; margin-top:20px;">
-    <h2>Καλώς ήρθατε στην ιστοσελίδα μας!</h2>
-    <h3>Οι Υπηρεσίες μας</h3>
-    <p>Ειδικευόμαστε σε εργασίες υψηλής ποιότητας στον τομέα των κατασκευών και εσωτερικών διαμορφώσεων. Η επαγγελματική μας ομάδα προσφέρει πλήρεις και εξατομικευμένες υπηρεσίες για:</p>
-    <ul>
-      <li>Εγκατάσταση γυψοσανίδας – ανθεκτικές κατασκευές και άψογα φινιρίσματα προσαρμοσμένα στις ανάγκες σας</li>
-      <li>Εφαρμογή στόκου – ομαλές επιφάνειες έτοιμες για κάθε τύπο βαφής ή διακόσμησης</li>
-      <li>Βαφή – χρησιμοποιούμε υλικά υψηλής ποιότητας για ανθεκτικό και αισθητικό φινίρισμα</li>
-      <li>Τοποθέτηση πλακιδίων και κεραμικών – για μια κομψή και λειτουργική εμφάνιση σε μπάνια, κουζίνες και άλλους χώρους</li>
-      <li>Σοβάτισμα – τόσο διακοσμητικό όσο και λειτουργικό, με προσοχή στη λεπτομέρεια</li>
-    </ul>
-    <p>Δεσμευόμαστε να προσφέρουμε ποιοτικές εργασίες, τηρώντας τα χρονοδιαγράμματα και τον προϋπολογισμό, ώστε κάθε έργο να γίνει μια επιτυχημένη πραγματικότητα.</p>
-    <h3>Επικοινωνία</h3>
-    <p>Τηλέφωνο: <a href="tel:+96226088" style="color: blue; text-decoration: underline;">96226088</a></p>
-  </div>
+    .lang-buttons button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #3498db;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
 
-  <!-- РУССКИЙ -->
-  <div id="content-ru" class="lang-content" style="display:none; margin-top:20px;">
-    <h2>Добро пожаловать на наш сайт!</h2>
-    <h3>Наши услуги</h3>
-    <p>Мы специализируемся на высококачественных строительных и отделочных работах. Наша профессиональная команда предлагает полный комплекс персонализированных услуг для:</p>
-    <ul>
-      <li>Монтаж гипсокартона – прочные конструкции и идеальная отделка, адаптированная под ваши нужды</li>
-      <li>Шпаклевка – ровные поверхности, подготовленные под любой тип краски или декора</li>
-      <li>Покраска – используем качественные материалы для долговечного и эстетичного покрытия</li>
-      <li>Укладка плитки и кафеля – для элегантного и функционального вида в ванных комнатах, кухнях и других помещениях</li>
-      <li>Штукатурка – декоративная и функциональная, с вниманием к деталям</li>
-    </ul>
-    <p>Мы стремимся предоставлять качественные работы, соблюдая сроки и бюджет, чтобы каждый проект стал успешной реальностью.</p>
-    <h3>Контакты</h3>
-    <p>Телефон: <a href="tel:+96226088" style="color: blue; text-decoration: underline;">96226088</a></p>
-  </div>
+    .lang-buttons button:hover {
+      background-color: #2d85c2;
+    }
 
-  <!-- עִברִית -->
-  <div id="content-he" class="lang-content" style="display:none; margin-top:20px; direction: rtl; text-align: right;">
-    <h2>ברוכים הבאים לאתר שלנו!</h2>
-    <h3>השירותים שלנו</h3>
-    <p>אנו מתמחים בעבודות בנייה וגימור פנים באיכות גבוהה. הצוות המקצועי שלנו מציע שירותים מלאים ומותאמים אישית עבור:</p>
-    <ul>
-      <li>התקנת גבס – מבנים עמידים וגימורים מושלמים המותאמים לצרכיכם</li>
-      <li>מריחת טיח – משטחים חלקים ומוכנים לכל סוג של צבע או דקור</li>
-      <li>צביעה – אנו משתמשים בחומרים איכותיים לגימור עמיד ואסתטי</li>
-      <li>הנחת אריחים – למראה אלגנטי ופונקציונלי בחדרי אמבטיה, מטבחים ומקומות נוספים</li>
-      <li>טיח – טיח דקורטיבי ופונקציונלי, עם תשומת לב לפרטים</li>
-    </ul>
-    <p>אנו מחויבים לספק עבודות איכותיות, לעמוד בלוחות זמנים ובתקציב, כדי שכל פרויקט יהפוך למציאות מוצלחת.</p>
-    <h3>צור קשר</h3>
-    <p>טלפון: <a href="tel:+96226088" style="color: blue; text-decoration: underline;">96226088</a></p>
-  </div>
+    .lang-content {
+      display: none;
+      line-height: 1.6;
+    }
 
-</section>
+    ul {
+      padding-left: 20px;
+    }
 
-<script>
-  function showLang(lang) {
-    const contents = document.querySelectorAll('.lang-content');
-    contents.forEach(c => c.style.display = 'none');
-    document.getElementById('content-' + lang).style.display = 'block';
-  }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
 
-  // Set default language to Romanian on page load
-  showLang('ro');
-</script>
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      #servicii-contact {
+        padding: 20px;
+      }
+
+      .lang-buttons {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section id="servicii-contact">
+    <div class="lang-buttons">
+      <button onclick="showLang('ro')">Română</button>
+      <button onclick="showLang('en')">English</button>
+      <button onclick="showLang('gr')">Ελληνικά</button>
+      <button onclick="showLang('ru')">Русский</button>
+      <button onclick="showLang('he')">עברית</button>
+    </div>
+
+    <!-- Aici vine conținutul în cele 5 limbi (folosește exact div-urile din mesajul anterior) -->
+    <!-- Ex: <div id="content-ro" class="lang-content">... </div> -->
+
+  </section>
+
+  <script>
+    function showLang(lang) {
+      const contents = document.querySelectorAll('.lang-content');
+      contents.forEach(c => c.style.display = 'none');
+      const active = document.getElementById('content-' + lang);
+      if (active) active.style.display = 'block';
+    }
+
+    // Afișează româna la început
+    showLang('ro');
+  </script>
+</body>
