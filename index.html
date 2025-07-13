@@ -1,1 +1,103 @@
-https://files.oaiusercontent.com/file-RepwVp1R72pwZiSvWBbS1P?se=2025-07-13T10%3A50%3A31Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dindex.html&sig=ly4wSEytdCZcAwyt%2BLJHBpC7Mrs2y5AQtraZkxkVXSs%3D
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    #servicii-contact {
+      background-color: #fff;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    #servicii-contact h2, #servicii-contact h3 {
+      color: #2c3e50;
+    }
+
+    .lang-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .lang-buttons button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #3498db;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .lang-buttons button:hover {
+      background-color: #2d85c2;
+    }
+
+    .lang-content {
+      display: none;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      #servicii-contact {
+        padding: 20px;
+      }
+
+      .lang-buttons {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section id="servicii-contact">
+    <div class="lang-buttons">
+      <button onclick="showLang('ro')">Română</button>
+      <button onclick="showLang('en')">English</button>
+      <button onclick="showLang('gr')">Ελληνικά</button>
+      <button onclick="showLang('ru')">Русский</button>
+      <button onclick="showLang('he')">עברית</button>
+    </div>
+
+    <!-- Aici vine conținutul în cele 5 limbi (folosește exact div-urile din mesajul anterior) -->
+    <!-- Ex: <div id="content-ro" class="lang-content">... </div> -->
+
+  </section>
+
+  <script>
+    function showLang(lang) {
+      const contents = document.querySelectorAll('.lang-content');
+      contents.forEach(c => c.style.display = 'none');
+      const active = document.getElementById('content-' + lang);
+      if (active) active.style.display = 'block';
+    }
+
+    // Afișează româna la început
+    showLang('ro');
+  </script>
+</body>
