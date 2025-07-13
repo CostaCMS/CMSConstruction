@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>CMS Construcții</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f2f2f2;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .galerie {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .galerie img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 5px #999;
+    }
+    .galerie p {
+      text-align: center;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Galerie lucrări construcții</h1>
+
+  <div class="galerie">
+    <div>
+      <img src="1.jpg" alt="Poză 1">
+      <p>Lucrare 1</p>
+    </div>
+    <div>
+      <img src="135790528_...jpg" alt="Poză 2">
+      <p>Lucrare 2</p>
+    </div>
+    <div>
+      <img src="147226205_...jpg" alt="Poză 3">
+      <p>Lucrare 3</p>
+    </div>
+    <div>
+      <img src="148620604_...jpg" alt="Poză 4">
+      <p>Lucrare 4</p>
+    </div>
+    <!-- Adaugă mai multe imagini dacă vrei -->
+  </div>
+</body>
+</html>
