@@ -1,141 +1,60 @@
-<section id="servicii-contact" style="padding: 40px; max-width: 900px; margin: auto; font-family: 'Segoe UI', sans-serif;">
-
-  <!-- Butoane limbă -->
-  <div style="text-align: center; margin-bottom: 30px;">
-    <button onclick="showLang('ro')" class="lang-btn">Română</button>
-    <button onclick="showLang('en')" class="lang-btn">English</button>
-    <button onclick="showLang('gr')" class="lang-btn">Ελληνικά</button>
-    <button onclick="showLang('ru')" class="lang-btn">Русский</button>
-    <button onclick="showLang('he')" class="lang-btn">עברית</button>
-  </div>
-
-  <!-- Conținut limbi -->
-  <div id="content-ro" class="lang-content">
-    <h2>Bine ați venit pe site-ul nostru!</h2>
-    <h3>Cu ce ne ocupăm</h3>
-    <p>Suntem specializați în lucrări de înaltă calitate în domeniul construcțiilor și amenajărilor interioare...</p>
-    <ul>
-      <li>Montaj rigips</li>
-      <li>Aplicare glet</li>
-      <li>Vopsitorie</li>
-      <li>Montaj gresie și faianță</li>
-      <li>Tencuieli</li>
-    </ul>
-    <h3>Contact</h3>
-    <p>Telefon: <a href="tel:+96226088">96226088</a></p>
-  </div>
-
-  <div id="content-en" class="lang-content" style="display: none;">
-    <h2>Welcome to our website!</h2>
-    <h3>Our Services</h3>
-    <p>We specialize in high-quality construction and interior finishing works...</p>
-    <ul>
-      <li>Drywall installation</li>
-      <li>Putty application</li>
-      <li>Painting</li>
-      <li>Tile and ceramic installation</li>
-      <li>Plastering</li>
-    </ul>
-    <h3>Contact</h3>
-    <p>Phone: <a href="tel:+96226088">96226088</a></p>
-  </div>
-
-  <div id="content-gr" class="lang-content" style="display: none;">
-    <h2>Καλώς ήρθατε στην ιστοσελίδα μας!</h2>
-    <h3>Οι Υπηρεσίες μας</h3>
-    <p>Ειδικευόμαστε σε εργασίες υψηλής ποιότητας...</p>
-    <ul>
-      <li>Εγκατάσταση γυψοσανίδας</li>
-      <li>Εφαρμογή στόκου</li>
-      <li>Βαφή</li>
-      <li>Τοποθέτηση πλακιδίων</li>
-      <li>Σοβάτισμα</li>
-    </ul>
-    <h3>Επικοινωνία</h3>
-    <p>Τηλέφωνο: <a href="tel:+96226088">96226088</a></p>
-  </div>
-
-  <div id="content-ru" class="lang-content" style="display: none;">
-    <h2>Добро пожаловать на наш сайт!</h2>
-    <h3>Наши услуги</h3>
-    <p>Мы специализируемся на высококачественных строительных работах...</p>
-    <ul>
-      <li>Монтаж гипсокартона</li>
-      <li>Шпаклевка</li>
-      <li>Покраска</li>
-      <li>Укладка плитки</li>
-      <li>Штукатурка</li>
-    </ul>
-    <h3>Контакты</h3>
-    <p>Телефон: <a href="tel:+96226088">96226088</a></p>
-  </div>
-
-  <div id="content-he" class="lang-content" style="display: none; direction: rtl; text-align: right;">
-    <h2>ברוכים הבאים לאתר שלנו!</h2>
-    <h3>השירותים שלנו</h3>
-    <p>אנו מתמחים בעבודות בנייה איכותיות...</p>
-    <ul>
-      <li>התקנת גבס</li>
-      <li>מריחת טיח</li>
-      <li>צביעה</li>
-      <li>הנחת אריחים</li>
-      <li>טיח דקורטיבי</li>
-    </ul>
-    <h3>צור קשר</h3>
-    <p>טלפון: <a href="tel:+96226088">96226088</a></p>
-  </div>
-
-</section>
-
-<!-- STILURI -->
-<style>
-  .lang-btn {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-
-  .lang-btn:hover {
-    background-color: #0056b3;
-  }
-
-  .lang-content {
-    background-color: #f9f9f9;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-
-  .lang-content h2 {
-    color: #333;
-    font-size: 28px;
-  }
-
-  .lang-content ul {
-    padding-left: 20px;
-    margin-top: 10px;
-  }
-
-  .lang-content a {
-    color: #007BFF;
-    text-decoration: none;
-  }
-
-  .lang-content a:hover {
-    text-decoration: underline;
-  }
-</style>
-
-<!-- SCRIPT LIMBI -->
-<script>
-  function showLang(lang) {
-    document.querySelectorAll('.lang-content').forEach(el => el.style.display = 'none');
-    document.getElementById('content-' + lang).style.display = 'block';
-  }
-</script>
+<h2>We turn spaces into inspiring places</h2>
+<h3>Premium construction and interior finishing services</h3>
+<p>We are a dynamic team of professionals, passionate about precision and high-quality craftsmanship. Whether you're renovating, building, or simply upgrading your space, we deliver custom solutions from start to finish.</p>
+<ul>
+  <li><strong>Drywall & partitions</strong></li>
+  <li><strong>Putty & smooth finishes</strong></li>
+  <li><strong>Interior painting</strong></li>
+  <li><strong>Tile & ceramic installation</strong></li>
+  <li><strong>Decorative plastering</strong></li>
+</ul>
+<p>We work fast, clean, and on budget – every time.</p>
+<p>📞 Phone: <a href="tel:+96226088">96226088</a></p>
+<h2>Μεταμορφώνουμε χώρους σε πηγή έμπνευσης</h2>
+<h3>Υπηρεσίες κατασκευής και τελειωμάτων υψηλής ποιότητας</h3>
+<p>Είμαστε μια δυναμική ομάδα επαγγελματιών, με πάθος για λεπτομέρεια και άριστο αποτέλεσμα. Είτε ανακαινίζετε, είτε χτίζετε, είτε απλώς θέλετε μια μοντέρνα αλλαγή, σας προσφέρουμε ολοκληρωμένες και εξατομικευμένες λύσεις.</p>
+<ul>
+  <li><strong>Γυψοσανίδες & χωρίσματα</strong></li>
+  <li><strong>Στοκάρισμα & λεία επιφάνεια</strong></li>
+  <li><strong>Εσωτερικές βαφές</strong></li>
+  <li><strong>Τοποθέτηση πλακιδίων και κεραμικών</strong></li>
+  <li><strong>Διακοσμητικά σοβάτισματα</strong></li>
+</ul>
+<p>Δουλεύουμε καθαρά, γρήγορα και με σεβασμό στο χρονοδιάγραμμα και τον προϋπολογισμό σας.</p>
+<p>📞 Τηλέφωνο: <a href="tel:+96226088">96226088</a></p>
+<h2>Преображаем пространство в источник вдохновения</h2>
+<h3>Премиальные услуги по строительству и отделке</h3>
+<p>Мы — команда профессионалов, влюблённых в своё дело. Ремонт, строительство или обновление — мы предложим индивидуальные решения под ключ.</p>
+<ul>
+  <li><strong>Гипсокартон и перегородки</strong></li>
+  <li><strong>Шпаклёвка и идеальные поверхности</strong></li>
+  <li><strong>Внутренняя покраска</strong></li>
+  <li><strong>Укладка плитки и кафеля</strong></li>
+  <li><strong>Декоративная штукатурка</strong></li>
+</ul>
+<p>Работаем аккуратно, быстро и в рамках бюджета.</p>
+<p>📞 Телефон: <a href="tel:+96226088">96226088</a></p>
+<h2>Transformăm spațiile în locuri care inspiră</h2>
+<h3>Servicii de construcții și finisaje premium</h3>
+<p>Suntem o echipă dinamică de profesioniști, pasionați de detalii și de lucrul bine făcut. Fie că renovezi, construiești sau doar vrei o schimbare modernă, îți oferim soluții personalizate de la A la Z.</p>
+<ul>
+  <li><strong>Rigips & compartimentări</strong></li>
+  <li><strong>Glet & finisaje</strong></li>
+  <li><strong>Vopsitorii interioare</strong></li>
+  <li><strong>Montaj gresie și faianță</strong></li>
+  <li><strong>Tencuieli decorative</strong></li>
+</ul>
+<p>Lucrăm rapid, curat și eficient, respectând bugetul și termenele.</p>
+<p>📞 Telefon: <a href="tel:+96226088">96226088</a></p>
+<h2>הופכים כל חלל למקום מעורר השראה</h2>
+<h3>שירותי בנייה וגימור פנים ברמה גבוהה</h3>
+<p>אנחנו צוות מקצועי ודינמי עם תשוקה לאיכות ולדיוק. שיפוץ, בנייה או שינוי עיצוב – אנו מציעים פתרונות מותאמים אישית מקצה לקצה.</p>
+<ul>
+  <li><strong>התקנת גבס ומחיצות</strong></li>
+  <li><strong>מריחת שפכטל וגימורים חלקים</strong></li>
+  <li><strong>צביעת פנים</strong></li>
+  <li><strong>ריצוף וחיפוי קרמיקה</strong></li>
+  <li><strong>טיח דקורטיבי</strong></li>
+</ul>
+<p>עובדים במהירות, בניקיון, ובמסגרת התקציב שנקבע מראש.</p>
+<p>📞 טלפון: <a href="tel:+96226088">96226088</a></p>
